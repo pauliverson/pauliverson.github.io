@@ -20,9 +20,8 @@
 			// var str;
 			// str = prompt("请输入你的名字,有惊喜！");
 			// console.log(str);
-			window.onload = function() {
-				autoPlayMusic()
-				alert(3333)
+			// window.onload = function() {
+			// 	autoPlayMusic()
 				// document.getElementById('audio1').load();
 				// if (str != null && str !="") {
 				// 	//document.getElementById("ai").innerHTML=str;
@@ -37,7 +36,7 @@
 			// 		webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
 			// 		alert(11111)
 			// 	}
-			}
+			// }
 
 			// document.addEventListener('DOMContentLoaded', function () {
 			// 	function audioAutoPlay() {
@@ -57,40 +56,40 @@
 			// }
 			// document.addEventListener('touchstart', audioAutoPlay);
 
-			function autoPlayMusic() {
-				// 自动播放音乐效果，解决浏览器或者APP自动播放问题
-				function musicInBrowserHandler() {
-					alert(11111)
-					musicPlay(true);
-					document.body.removeEventListener('touchstart', musicInBrowserHandler);
-				}
-				document.body.addEventListener('touchstart', musicInBrowserHandler);
+			// function autoPlayMusic() {
+			// 	// 自动播放音乐效果，解决浏览器或者APP自动播放问题
+			// 	function musicInBrowserHandler() {
+			// 		alert(11111)
+			// 		musicPlay(true);
+			// 		document.body.removeEventListener('touchstart', musicInBrowserHandler);
+			// 	}
+			// 	document.body.addEventListener('touchstart', musicInBrowserHandler);
 
-				// 自动播放音乐效果，解决微信自动播放问题
-				function musicInWeixinHandler() {
-					musicPlay(true);
-					document.addEventListener("WeixinJSBridgeReady", function () {
-						musicPlay(true);
-					}, false);
-					document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
-				}
-				document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
-			}
-			function musicPlay(isPlay) {
-				var media = document.getElementById('#audio1');
-				if (isPlay && media.paused) {
-					alert(2222)
-					media.play();
-				}
-				if (!isPlay && !media.paused) {
-					media.pause();
-				}
-			}
+			// 	// 自动播放音乐效果，解决微信自动播放问题
+			// 	function musicInWeixinHandler() {
+			// 		musicPlay(true);
+			// 		document.addEventListener("WeixinJSBridgeReady", function () {
+			// 			musicPlay(true);
+			// 		}, false);
+			// 		document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+			// 	}
+			// 	document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+			// }
+			// function musicPlay(isPlay) {
+			// 	var media = document.getElementById('#audio1');
+			// 	if (isPlay && media.paused) {
+			// 		alert(2222)
+			// 		media.play();
+			// 	}
+			// 	if (!isPlay && !media.paused) {
+			// 		media.pause();
+			// 	}
+			// }
 		</script>
 	</head>
 
 	<body>
-		<audio id="audio1" src="renxi.mp3" loop autoplay type="audio/mp3" preload="auto" controls></audio>
+		<audio id="audio1" src="renxi.mp3" loop type="audio/mp3" controls></audio>
 		<div id="main">
 			<div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
 			<div id="wrap">
