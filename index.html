@@ -15,24 +15,26 @@
 		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
 		<style type="text/css"></style>
-		<!-- <script>
-			var str;
-			str = prompt("请输入你的名字,有惊喜！");
-			console.log(str);
+		<script>
+			// var str;
+			// str = prompt("请输入你的名字,有惊喜！");
+			// console.log(str);
 			window.onload = function() {
-				if (str != null && str !="") {
-					//document.getElementById("ai").innerHTML=str;
-					var all = document.getElementsByClassName("ai"); //返回的是数组
-					for (var i = 0; i < all.length; i++) {
-						all[i].innerHTML = str;
-					}
-				}
+				document.getElementById('audio1').load();
+				// if (str != null && str !="") {
+				// 	//document.getElementById("ai").innerHTML=str;
+				// 	var all = document.getElementsByClassName("ai"); //返回的是数组
+				// 	for (var i = 0; i < all.length; i++) {
+				// 		all[i].innerHTML = str;
+				// 	}
+				// }
+				document.getElementById('audio1').play();
 			}
-		</script> -->
+		</script>
 	</head>
 
 	<body>
-		<audio src="renxi.mp3" autoplay loop preload="auto" type='audio/mp3'></audio>
+		<audio id="audio1" src="renxi.mp3" autoplay loop preload="auto" type="audio/mp3"></audio>
 		<div id="main">
 			<div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
 			<div id="wrap">
@@ -43,8 +45,8 @@
 						<span class="say"> </span><br>
 						<span class="say"><span class="ai" >对的人 </span>，昨天太近，明天太远。选在今日，对你告白！</span><br>
 						<span class="say"> </span><br>
-						<span class="say"> 对你的依赖，如同鱼儿离不开海洋，如同植物离不开阳光。</span><br>
-						<span class="say"> </span><br>
+						<!-- <span class="say"> 对你的依赖，如同鱼儿离不开海洋，如同植物离不开阳光。</span><br>
+						<span class="say"> </span><br> -->
 						<span class="say">给我一次机会，写满我们的幸福人生。</span><br>
 						<span class="say"> </span><br>
 						<span class="say">睁开我的眼睛，我的眼里只有你！</span><br>
